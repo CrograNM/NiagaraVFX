@@ -3,3 +3,13 @@
 - Mesh Renderer
 - Ribbon Renderer
 
+--------------------------------------------------------
+<Spawn And Update>
+
+Spawn = Begin Play
+Update = Event Tick
+
+- Emitter Spawn : 가끔만 사용
+- Emitter Update : 스폰할 파티클 갯수 등 설정
+- Particle Spawn : Initial Size / Location / Color / Life time 등등
+- Particle Update : 파티클 움직임 제어 (Movement / Scaling / Fading 등)
