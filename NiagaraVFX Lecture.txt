@@ -13,3 +13,14 @@ Update = Event Tick
 - Emitter Update : 스폰할 파티클 갯수 등 설정
 - Particle Spawn : Initial Size / Location / Color / Life time 등등
 - Particle Update : 파티클 움직임 제어 (Movement / Scaling / Fading 등)
+
+--------------------------------------------------------
+<Material>
+
+Blend Mode - Additive / Translucent 가 많이 사용됨.
+- Additive : 검은색이 투명하게 렌더링 됨.
+- Translucent : 색이 어두워지는걸 표현 가능.
+
+Shading Model
+- Default Lit : 그림자나 빛을 모두 드리울 수 있음.
+- Unlit : 그림자나 빛이 드리워지지 않음 -> VFX에 적합
