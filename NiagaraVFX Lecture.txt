@@ -24,3 +24,24 @@ Blend Mode - Additive / Translucent 가 많이 사용됨.
 Shading Model
 - Default Lit : 그림자나 빛을 모두 드리울 수 있음.
 - Unlit : 그림자나 빛이 드리워지지 않음 -> VFX에 적합
+
+--------------------------------------------------------
+<화염방사기 복습>
+
+- Renderers
+스프라이트 렌더러만 사용했음 (-> 머티리얼 및 Sub Image Size 변경)
+Module: 	[Shape Location, Add Velocity], 
+		[Scale Sprite Size, Solve Force, SubUVAnimation, Color or Scale Color]
+
+- Elements
+불꽃과 연기를 만드는 일부 텍스쳐와 노멀 맵만 사용했음
+
+- Forces/Material
+열 디스토션
+노드: 		[Panner 노드로 속도 삽입, Normal Texture, 일렁이는 텍스쳐]
+머티리얼:	[Index Of Refraction, Translucent, Unlit, Opacity 0]
+
+불꽃
+Static Switch Params 활용하여 기존의 SingleTexture_Additive 머티리얼을 재사용함.
+Sine_Remapped를 사용해 시간에 따라 밝기가 왔다갔다 하는 로직의 노드를 구성함.
+
